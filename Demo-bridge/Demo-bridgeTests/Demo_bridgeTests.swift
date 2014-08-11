@@ -1,15 +1,15 @@
 //
-//  CCCircleSpinLayer_swiftTests.swift
-//  CCCircleSpinLayer-swiftTests
+//  Demo_bridgeTests.swift
+//  Demo-bridgeTests
 //
-//  Created by ccw on 14-8-10.
+//  Created by ccw on 14-8-11.
 //  Copyright (c) 2014年 ccw. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class CCCircleSpinLayer_swiftTests: XCTestCase {
+class Demo_bridgeTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CCCircleSpinLayer-swift
+//  Demo-bridge
 //
 //  Created by ccw on 14-8-10.
 //  Copyright (c) 2014年 ccw. All rights reserved.
