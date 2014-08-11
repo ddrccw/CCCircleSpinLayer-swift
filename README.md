@@ -1,4 +1,4 @@
 CCCircleSpinLayer-swift
 =======================
 
-swift version of CCCircleSpinLayer
+study swift based on CCCircleSpinLayer
