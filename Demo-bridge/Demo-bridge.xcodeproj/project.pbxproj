@@ -344,10 +344,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ka Keung Lau (Y7HHTMY55K)";
 				INFOPLIST_FILE = "Demo-bridge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "46694c8e-1b4d-4109-93a5-981a1ef66144";
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo-bridge/Demo_bridge-Bridging-Header.h";
 			};
 			name = Debug;
@@ -357,10 +359,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ka Keung Lau (Y7HHTMY55K)";
 				INFOPLIST_FILE = "Demo-bridge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "46694c8e-1b4d-4109-93a5-981a1ef66144";
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo-bridge/Demo_bridge-Bridging-Header.h";
 			};
 			name = Release;
@@ -418,6 +422,7 @@
 				1A9F500F19990BF600241C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A9F501019990BF600241C93 /* Build configuration list for PBXNativeTarget "Demo-bridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				1A9F501219990BF600241C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
