@@ -22,11 +22,22 @@
                                     <constraint firstAttribute="width" constant="114" id="D0P-j9-aXI"/>
                                 </constraints>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOK-qI-1m4">
+                                <rect key="frame" x="277" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubg-cF-unB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="xTd-bl-d3e" secondAttribute="centerX" id="AmZ-6m-JAC"/>
+                            <constraint firstItem="lOK-qI-1m4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Niv-f0-VXA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xTd-bl-d3e" secondAttribute="bottom" constant="105" id="VrF-qy-TQf"/>
+                            <constraint firstAttribute="centerX" secondItem="lOK-qI-1m4" secondAttribute="centerX" id="er3-2k-DIV"/>
                         </constraints>
                     </view>
                     <connections>

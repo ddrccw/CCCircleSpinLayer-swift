@@ -197,6 +197,7 @@ class CCCircleSpinLayer: CALayer {
         scaleAnim.beginTime = 0
         let multiple: Double = 1;
         scaleAnim.duration = CFTimeInterval(kNumberOfCircle) / 7.0 * multiple
+
         var keyTimes: [CFTimeInterval] = Array()
         var values: [NSValue] = Array()
         var timeFunctions: [CAMediaTimingFunction] = Array()
@@ -215,11 +216,12 @@ class CCCircleSpinLayer: CALayer {
                 scale = 0
             }
             else if i <= midOffset {
-                scale = Float(min(1.0 / mid * (i - 1), 1))
+                scale = min(1.0 / Float(mid) * (Float(i - 1)), 1)
             }
             else {
-                scale = Float(min(1.0 / mid * (kNumberOfCircle - i), 1))
+                scale = min(1.0 / Float(mid) * (Float(kNumberOfCircle - i)), 1)
             }
+            
             t = CATransform3DScale(CATransform3DIdentity, CGFloat(scale), CGFloat(scale), 1)
             values.append(NSValue(CATransform3D: t))
             

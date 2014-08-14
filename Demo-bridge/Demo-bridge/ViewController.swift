@@ -10,13 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     var sp: CCCircleSpinLayer!
+    var anosp: CCCircleSpinLayer!
     var lastValue: Float = 0.0
     @IBOutlet weak var silder: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.sp = CCCircleSpinLayer(size: CGSize(width: 80, height: 80), color: UIColor.whiteColor(), animated: false)
+        self.anosp = CCCircleSpinLayer(size: CGSize(width: 80, height: 80), color: UIColor.whiteColor(), animated: false)
         self.view.layer.addSublayer(self.sp)
+        self.view.layer.addSublayer(self.anosp)
         self.sp.position = self.view.center
+        self.anosp.position = CGPointMake(self.view.frame.size.width / 2, 100)
         self.view.backgroundColor = UIColor(CGColor: self.sp.backgroundColor)
         self.silder.value = 0
         self.silder.addTarget(self, action: "change:", forControlEvents: .ValueChanged)
@@ -35,6 +39,17 @@ class ViewController: UIViewController {
             self.sp.showInProgress(CGFloat(-aSlider.value))
         }
         self.lastValue = aSlider.value
+    }
+    
+    var hasStart = false
+    @IBAction func start(sender: AnyObject) {
+        if !hasStart {
+            self.anosp.startAnimating()
+        }
+        else {
+            self.anosp.stopAnimating()
+        }
+        hasStart = !hasStart
     }
 }
 
