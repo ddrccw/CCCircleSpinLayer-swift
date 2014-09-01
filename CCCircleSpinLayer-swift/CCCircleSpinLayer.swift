@@ -31,7 +31,7 @@ class CCCircleSpinLayer: CALayer {
     var color: UIColor!
     var circles: [CALayer]!
    
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
